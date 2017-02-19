@@ -1,0 +1,32 @@
+[ignore]
+
+# Files
+	.*/webpack.config.js
+	.*/webpack.config.babel.js
+
+# Directories
+	.*/build/.*
+	.*/node_modules/.*
+	.*/webpack/.*
+
+
+[include]
+
+
+[libs]
+
+# Flow-typed
+	.*/flow-typed/npm
+
+
+[options]
+
+# Flags
+	all=true
+
+# Comments
+	suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+
+# Options
+	module.name_mapper.extension='css'           -> '<PROJECT_ROOT>/flow/WebpackAssetStub.js.flow'
+	module.name_mapper.extension='html'          -> '<PROJECT_ROOT>/flow/WebpackAssetStub.js.flow'
