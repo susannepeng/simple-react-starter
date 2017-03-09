@@ -23,7 +23,7 @@ const config = {
 				},
 				{
 					test: /\.html$/,
-					loader: 'file-loader?name=[path][name].[ext]&context=' + APP_DIR
+					loader: 'file-loader?name=[path][name].[ext]&context=' + SRC_DIR
 				}
 			]
 		},
